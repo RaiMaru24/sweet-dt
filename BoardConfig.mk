@@ -132,6 +132,7 @@ BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
 BOARD_KERNEL_CMDLINE += loop.max_part=7
 KERNEL_LD := LD=ld.lld
 BOARD_KERNEL_CMDLINE += kpti=off
+BOARD_KERNEL_CMDLINE += cgroup_disable=pressure
 
 # Media
 TARGET_USES_ION := true
