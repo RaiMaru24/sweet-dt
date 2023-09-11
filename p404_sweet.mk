@@ -11,14 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from sweet device
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
-# Inherit common ProtonPlus OS  Stuff.
-$(call inherit-product, vendor/proton/config/common.mk)
+# Inherit common P404 OS  Stuff.
+$(call inherit-product, vendor/404/configs/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 WITH_GAPPS := true
-TARGET_USES_BLUR := true
-PROTON_BUILD_VARIANT := OFFICIAL
+P404_BUILDTYPE=TOKUI
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
-PRODUCT_NAME := sweet
+PRODUCT_NAME := p404_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 10 Pro
