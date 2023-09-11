@@ -204,7 +204,6 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 -vendor/lib64/libsnsapi.so
 -vendor/lib64/libsnsdiaglog.so
 -vendor/lib64/libswregistrationalgo.so
--vendor/lib64/libswvdec.so
 -vendor/lib64/libsymphony-cpu.so
 -vendor/lib64/libtriplecam_video_optical_zoom.so
 -vendor/lib64/libvideofilter_only.so
@@ -790,7 +789,6 @@ vendor/etc/seccomp_policy/codec2.vendor.base.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext.policy
 -vendor/lib/libAlacSwDec.so
 -vendor/lib/libApeSwDec.so
--vendor/lib/libMpeg4SwEncoder.so
 -vendor/lib/libOmxAacDec.so
 -vendor/lib/libOmxAlacDec.so
 -vendor/lib/libOmxAlacDecSw.so
@@ -802,15 +800,12 @@ vendor/etc/seccomp_policy/codec2.vendor.ext.policy
 -vendor/lib/libOmxEvrcDec.so
 -vendor/lib/libOmxG711Dec.so
 -vendor/lib/libOmxQcelp13Dec.so
--vendor/lib/libOmxSwVdec.so
--vendor/lib/libOmxSwVencMpeg4.so
 -vendor/lib/libOmxVideoDSMode.so
 -vendor/lib/libOmxVpp.so
 -vendor/lib/libOmxWmaDec.so
 -vendor/lib/libdsd2pcm.so
 -vendor/lib/libmmosal.so;MODULE=libmmosal_vendor
 -vendor/lib/libqcodec2.so
--vendor/lib/libswvdec.so
 -vendor/lib/libvppclient.so
 -vendor/lib/libvpphvx.so
 -vendor/lib/libvpplibrary.so
