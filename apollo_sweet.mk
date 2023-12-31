@@ -12,13 +12,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
 # Inherit common ProtonPlus OS  Stuff.
-$(call inherit-product, vendor/proton/config/common.mk)
+$(call inherit-product, vendor/apollo/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GAPPS := true
 TARGET_USES_BLUR := true
-PROTON_BUILD_VARIANT := OFFICIAL
+APOLLO_BUILDTYPE := OFFICIAL
 
-PRODUCT_NAME := sweet
+PRODUCT_NAME := apollo_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 10 Pro
