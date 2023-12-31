@@ -97,7 +97,8 @@ DEVICE_MANIFEST_FILE += hardware/qcom-caf/sm8150/media/conf_files/sm6150/c2_mani
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/configs/hidl/device_framework_matrix.xml \
-    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
+    vendor/apollo/config/device_framework_matrix.xml
 
 ODM_MANIFEST_SKUS += sweet
 ODM_MANIFEST_SWEET_FILES := \
@@ -123,8 +124,6 @@ TARGET_KERNEL_CLANG_COMPILE := true
 KERNEL_SUPPORTS_LLVM_TOOLS := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sweet
 TARGET_KERNEL_CONFIG := vendor/sweet_user_defconfig
-TARGET_KERNEL_CLANG_VERSION := playground
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-playground
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x880000
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
