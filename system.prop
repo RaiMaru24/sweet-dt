@@ -14,6 +14,9 @@ vendor.bluetooth.soc=cherokee
 persist.vendor.camera.privapp.list=app.grapheneos.camera,org.codeaurora.snapcam,com.android.camera
 vendor.camera.aux.packagelist=app.grapheneos.camera,org.codeaurora.snapcam,com.android.camera
 
+# Charger
+ro.charger.enable_suspend=true
+
 # CNE
 persist.vendor.cne.feature=1
 
